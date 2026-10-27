@@ -133,20 +133,15 @@
 
   .product:hover { background: #f7f8fa; }
 
+  /* 产品图标：直接使用 App 图标原图，自带圆角 */
   .product-icon {
+    display: block;
     width: 42px;
     height: 42px;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 10px;
+    object-fit: cover;
   }
-
-  .icon-music { background: linear-gradient(140deg, #ff7a3d 0%, #ff2d55 100%); }
-  .icon-jump  { background: linear-gradient(140deg, #33cfdf 0%, #3b8ef6 100%); }
-
-  .product-icon svg { width: 22px; height: 22px; display: block; }
 
   .product-name {
     font-size: 15px;
@@ -379,25 +374,13 @@
     <div class="section-title">产品与服务</div>
     <div class="products">
       <a class="product" href="https://laixinquan.github.io/music-search-downloader/">
-        <div class="product-icon icon-music">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M9 18V5l12-2v13" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="6" cy="18" r="3" stroke="#fff" stroke-width="1.8"/>
-            <circle cx="18" cy="16" r="3" stroke="#fff" stroke-width="1.8"/>
-          </svg>
-        </div>
+        <img class="product-icon" src="assets/qb-music.png" alt="QB音乐 图标" width="42" height="42" loading="lazy">
         <div class="product-name">QB音乐</div>
         <div class="product-desc">开源，免费<span class="product-url">laixinquan.github.io/music-search-downloader</span></div>
       </a>
 
       <a class="product" href="https://laixinquan.github.io/jump/">
-        <div class="product-icon icon-jump">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M9.2 8.4 5.6 12l3.6 3.6" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M14.8 8.4 18.4 12l-3.6 3.6" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M13.2 6.6l-2.4 10.8" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/>
-          </svg>
-        </div>
+        <img class="product-icon" src="assets/jump.png" alt="公益跳转站 图标" width="42" height="42" loading="lazy">
         <div class="product-name">公益跳转站</div>
         <div class="product-desc">开源-免费-稳定，咨询请私信</div>
       </a>
