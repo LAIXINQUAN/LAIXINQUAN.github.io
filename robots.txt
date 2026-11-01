@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://laixinquan.github.io/music-search-downloader/sitemap.xml
+Sitemap: https://laixinquan.github.io/hengshuistyle/sitemap.xml
